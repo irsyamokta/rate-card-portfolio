@@ -28,7 +28,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           dangerous-clean-slate: true
-          server-dir: /
           protocol: ftps
           exclude: |
             **/node_modules/**
