@@ -4,7 +4,7 @@ const Hero = () => {
             id="home"
             className="flex flex-col lg:flex-row lg:justify-between items-center relative mb-10">
             <div
-                className="py-32 px-4 lg:py-8 xl:py-16">
+                className="px-4 py-8 xl:py-16">
                 <h1
                     className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl 2xl:text-6xl">
                     I'm 
@@ -36,7 +36,7 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
-            <img src="/src/assets/img/img-hero.png" alt="Indira Haeka Ananda" className="-mt-20 lg:mt-0 lg:w-1/2" />
+            <img src="/src/assets/img/img-hero.png" alt="Indira Haeka Ananda" fetchPriority="high" className="lg:w-1/2" />
             <img src="/src/assets/img/img-ornament.png" alt="Indira Haeka Ananda" className=" absolute bottom-0 right-0 h-14 md:h-20 w-full lg:h-auto" />
         </section>
     )

@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <nav
-            className="bg-white border-gray-200 fixed sm:static top-0 w-full z-20">
+            className="bg-white border-gray-200 sticky top-0 z-20">
             <div
                 className="flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/"

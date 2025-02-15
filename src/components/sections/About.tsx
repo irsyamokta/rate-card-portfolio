@@ -14,6 +14,7 @@ const About = () => {
             <img
                 src="/src/assets/img/img-about.png"
                 alt="Indira Haeka Ananda"
+                decoding="async"
                 className="w-1/2 lg:w-1/4"
                 data-aos="fade-right" />
             <div
