@@ -24,15 +24,15 @@ const About = () => {
                     - About Me
                 </p>
                 <h1
-                    className="mb-5 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+                    className="mb-5 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl"
                     data-aos="fade-left">
                     Who is
-                    <span className="text-primary italic font-normal">
+                    <span className="ms-2 text-primary italic font-normal">
                         Indira?
                     </span>
                 </h1>
                 <p
-                    className="mb-8 text-base font-normal text-gray-500 lg:text-xl"
+                    className="mb-8 text-sm font-normal text-gray-500 xl:text-xl"
                     data-aos="fade-left">
                     Hello! I am Indira, a beauty enthusiast who has a passion
                     in the world of beauty and self-care. In addition to sharing tips and

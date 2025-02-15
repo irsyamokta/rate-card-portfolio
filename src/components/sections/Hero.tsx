@@ -4,30 +4,30 @@ const Hero = () => {
             id="home"
             className="flex flex-col lg:flex-row lg:justify-between items-center relative mb-10">
             <div
-                className="py-32 px-4 lg:py-16">
+                className="py-32 px-4 lg:py-8 xl:py-16">
                 <h1
-                    className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-                    I'm
-                    <span className="text-primary italic font-normal">
+                    className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl 2xl:text-6xl">
+                    I'm 
+                    <span className="ms-2 text-primary italic font-normal">
                         Indira Haeka Ananda
                     </span>
                 </h1>
                 <h1
-                    className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
+                    className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl 2xl:text-6xl">
                     Beauty Enthusiast
                 </h1>
                 <h1
-                    className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
+                    className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl 2xl:text-6xl">
                     & Social Advocate
                 </h1>
                 <p
-                    className="mb-8 text-base font-normal text-gray-500 lg:text-xl">
+                    className="mb-8 text-sm font-normal text-gray-500 xl:text-base 2xl:text-xl">
                     Through the Instagram platform, I share experiences, product recommendations, and interesting insights about beauty and lifestyle.
                 </p>
                 <div
                     className="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0">
                     <a
-                        href="https://wa.me/6288226362997" target="_blank" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-secondary focus:ring-4 focus:ring-accent">
+                        href="https://wa.me/6288226362997" target="_blank" className="inline-flex justify-center items-center py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary hover:bg-secondary focus:ring-4 focus:ring-accent">
                         Contact Me
                         <svg
                             className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
