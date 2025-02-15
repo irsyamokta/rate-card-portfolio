@@ -4,7 +4,7 @@ const Hero = () => {
             id="home"
             className="flex flex-col lg:flex-row lg:justify-between items-center relative mb-10">
             <div
-                className="px-4 py-8 xl:py-16">
+                className="px-4 py-8 md:py-16">
                 <h1
                     className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-5xl 2xl:text-6xl">
                     I'm 

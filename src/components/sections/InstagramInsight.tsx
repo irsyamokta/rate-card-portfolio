@@ -30,7 +30,7 @@ const InstagramInsight = () => {
                 </h1>
             </div>
             <div
-                className="flex flex-col md:flex-row gap-4">
+                className="flex flex-wrap justify-center gap-4">
                 <div
                     className="bg-primary flex flex-col items-center justify-center w-56 h-56 xl:w-64 xl:h-64 text-base font-medium text-center text-white rounded-lg"
                     data-aos="fade-up">
