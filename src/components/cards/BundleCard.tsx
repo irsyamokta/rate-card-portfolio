@@ -1,4 +1,7 @@
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface BundleCardProps {
     name: string;
@@ -6,21 +9,38 @@ interface BundleCardProps {
     detail: string;
     price: string;
     message: string;
-    duration: number;
 }
 
-const PackageCard: React.FC<BundleCardProps> = ({ name, type, detail, price, message, duration }) => {
+const PackageCard: React.FC<BundleCardProps> = ({ name, type, detail, price, message }) => {
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
 
     const encodedMessage = encodeURIComponent(message);
 
     return (
-        <div className={`bg-background border border-primary flex flex-col items-center justify-center w-[300px] py-10 text-base font-medium text-center text-white rounded-lg gap-14 delay-[300ms] duration-[${duration}ms] taos:translate-y-[200px] taos:opacity-0 [animation-iteration-count:infinite]`} data-taos-offset="100">
-            <h1 className="text-2xl font-semibold text-primary">{name}</h1>
+        <div
+            className="bg-background border border-primary flex flex-col items-center justify-center w-[300px] py-10 text-base font-medium text-center text-white rounded-lg gap-14"
+            data-aos="flip-right">
+            <h1
+                className="text-2xl font-semibold text-primary">
+                {name}
+            </h1>
             <div>
-                <p className="text-primary">{type}</p>
-                <p className="text-primary">{detail}</p>
+                <p
+                    className="text-primary">
+                    {type}
+                </p>
+                <p
+                    className="text-primary">
+                    {detail}
+                </p>
             </div>
-            <h1 className="text-4xl font-bold text-primary">Rp{price}</h1>
+            <h1
+                className="text-4xl font-bold text-primary">
+                Rp{price}
+            </h1>
             <a
                 href={`https://wa.me/6288226362997?text=${encodedMessage}`}
                 target="_blank"
@@ -41,7 +61,6 @@ const BundleList: React.FC = () => {
             detail: "(Story + Feed)",
             price: "150.000",
             message: "Saya tertarik dengan paket Glow Up seharga Rp150.000. Mohon informasi lebih lanjut.",
-            duration: 600
         },
         {
             name: "Campaign Series",
@@ -49,7 +68,6 @@ const BundleList: React.FC = () => {
             detail: "(Story + Reels)",
             price: "220.000",
             message: "Saya tertarik dengan paket Campaign Series seharga Rp220.000. Mohon informasi lebih lanjut.",
-            duration: 700
         },
         {
             name: "All-In Beauty",
@@ -57,7 +75,6 @@ const BundleList: React.FC = () => {
             detail: "(Story + Feed + Reels)",
             price: "350.000",
             message: "Saya tertarik dengan paket All-In Beauty seharga Rp350.000. Mohon informasi lebih lanjut.",
-            duration: 800
         },
     ];
 
@@ -71,7 +88,6 @@ const BundleList: React.FC = () => {
                     detail={pkg.detail}
                     price={pkg.price}
                     message={pkg.message}
-                    duration={pkg.duration}
                 />
             ))}
         </div>
