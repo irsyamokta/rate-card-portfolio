@@ -18,7 +18,9 @@ const ScrollUp = () => {
     }, []);
 
     return (
-        <div id="scroll" className={`fixed bottom-48 right-5 md:right-16 z-50 bg-accent p-2 rounded-full border border-primary ${show ? 'block' : 'hidden'}`}>
+        <div
+            id="scroll"
+            className={`fixed bottom-48 right-5 md:right-16 z-50 bg-accent p-2 rounded-full border border-primary ${show ? 'block' : 'hidden'}`}>
             <a href="#home">
                 <img src="/src/assets/icon/icon-up-arrow.png" alt="icon arrow" className="w-6 md:w-10" />
             </a>
