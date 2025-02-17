@@ -18,12 +18,12 @@ const RateCard = () => {
                 className="text-center mb-16">
                 <p
                     className="md:text-xl mb-2 lg:mb-5"
-                    data-aos="fade-right">
+                    data-aos="fade-up">
                     - Rate Cards
                 </p>
                 <h1
                     className="lg:mb-5 text-3xl font-semibold tracking-tight leading-10 text-gray-900 md:text-5xl xl:text-6xl"
-                    data-aos="fade-left">
+                    data-aos="fade-up">
                     <span className="text-primary italic font-normal me-2">
                         Endorsement Packages
                     </span>

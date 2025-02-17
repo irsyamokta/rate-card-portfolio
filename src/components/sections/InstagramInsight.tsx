@@ -16,12 +16,12 @@ const InstagramInsight = () => {
                 className="text-center mb-16">
                 <p
                     className="md:text-xl mb-2 lg:mb-5"
-                    data-aos="fade-right">
+                    data-aos="fade-up">
                     - Instagram Insight
                 </p>
                 <h1
                     className="lg:mb-5 text-3xl font-semibold tracking-tight leading-10 text-gray-900 md:text-5xl xl:text-6xl"
-                    data-aos="fade-left">
+                    data-aos="fade-up">
                     Engagement On Point,
                     <span
                         className="ms-2 text-primary italic font-normal">
