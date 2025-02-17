@@ -3,7 +3,8 @@ export default {
   content: {
     files: [
       "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}"
+      "./src/**/*.{js,ts,jsx,tsx}",
+      "./node_modules/flowbite/**/*.js"
     ]
   },
   theme: {
@@ -19,6 +20,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    import('flowbite/plugin')
+  ],
 }
 
